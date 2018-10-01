@@ -56,9 +56,12 @@
        
         var loc = document.location.href;
     if (loc.indexOf('?') > 0) {
-        var strFilter = loc.split('?')[1];
+        var valor = loc.split('?')[1];
+        var medida = loc.split('?')[2];
+        
         //alert(strFilter);
-        document.getElementById("resultado").innerHTML=strFilter;
+        
+        document.getElementById("resultado").innerHTML=valor+" "+medida;
     }
 
     </script>
